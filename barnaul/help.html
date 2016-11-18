@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- ===================================================== HEAD ==================================================== -->
+<head>
+
+
+    <!-- ====== META TAGS ===== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Balakadesign">
+
+
+    <!-- ===== SEO META TAGS ===== -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Page Name — Barnaul</title>
+
+
+    <!-- ===== FAVICONS ===== -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.ico" />
+
+
+    <!-- ===== STYLE LINKS ===== -->
+
+    <!-- Google font -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Lightbox — image overlay -->
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css">
+
+    <!-- Fotorama — image & html gallery-->
+    <link rel="stylesheet" href="css/fotorama.css" type="text/css">
+
+    <!-- Scrollyeah — scroll floated elements-->
+    <link rel="stylesheet" href="css/scrollyeah.min.css" type="text/css">
+
+    <!-- Barnaul & bootstrap style file -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!-- =================================================== HEAD END ================================================== -->
+
+
+<body>
+
+<!-- =================================================== HEADER ==================================================== -->
+<header>
+    <section id="header">
+        <!-- Main menu -->
+        <nav class="navbar navbar-barnaul" role="navigation">
+            <div class="container">
+
+                <!-- Collapse button design -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#brn-navbar-collapse-1">
+                        <!-- You can change batch icon to your own -->
+                        <span class="batch icon32">&#xf0AA;</span>
+                    </button>
+                    <!-- logo image -->
+                    <a class="navbar-brand" href="#header"><img src="/img/barnaul-logo.png" alt="Barnaul"/></a>
+                </div>
+                <!-- Collapse button design end -->
+
+                <!-- Collapsing navbar -->
+                <div class="collapse navbar-collapse" id="brn-navbar-collapse-1">
+                    <!-- You can add menu items near logotype, just delete comment tag
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul> -->
+
+                    <!-- Right navbar part -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--<li><a href="#brn-features">Features</a></li>
+                        <li><a href="#brn-portfolio">Portfolio</a></li>
+                        <li><a href="#brn-pricing">Pricing</a></li>
+                        <li><a href="#brn-reviews">Reviews</a></li>-->
+
+                        <!-- You can add button or dropdown item here -->
+                        <!-- Just delete comment tags -->
+
+                        <!-- Button -->
+                        <li><a href="compile/index.php" class="btn btn-primary">Compile</a></li>
+
+                        <!-- Dropdown -->
+                        <!--<li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                               <li><a href="#">Action</a></li>
+                               <li><a href="#">Another action</a></li>
+                               <li><a href="#">Something else here</a></li>
+                               <li><a href="#">Separated link</a></li>
+                           </ul>
+                       </li>-->
+
+                    </ul><!-- Right navbar part end -->
+                </div><!-- Collapsing navbar end -->
+            </div>
+        </nav>
+        <!-- Main menu end-->
+    </section>
+</header>
+<!-- ================================================= HEADER END ================================================== -->
+
+<!-- ================================================ CSS & LESS =================================================== -->
+<section>
+
+    <div class="container">
+
+        <!-- Section header -->
+        <header>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-center">Barnaul guide<br><br></h1>
+                    <!-- Don't forget to use span tag for center lines -->
+                    <h2 class="stripe"><span>CSS & LESS</span></h2>
+                </div>
+            </div>
+        </header>
+        <!-- Section header-->
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <h3>Editing style files</h3>
+
+                <p class="lead">We use <a href="http://lesscss.org/">Less</a> for stylesheets</p>
+                <p>Style files contents of several stylesheet, imported in one</p>
+                <p>Main style file is <code>bootstrap.less</code>. All style is imported inside it.</p>
+                <p>Barnaul stylesheets are contained in two files: <code>barnaul.less</code> and <code>barnaul-animation.less</code></p>
+
+                <h4>Less benefits</h4>
+                <ul class="icon icon-star">
+                    <li>You can change color, font, font size & more in whole design by one click, without nasty searching</li>
+                    <li>Style rules are organized hierarchically, without long complex selectors</li>
+                    <li>You can use mixins — they allow you to embed all the properties of a class into another class by simply including the class name </li>
+                </ul>
+
+                <p>You can use LESS without compiling (for development). More info <a href="http://lesscss.org/#usage">here</a></p>
+                <p class="alert alert-danger">Use Less.js only for development!!! It works very slow on mobile devices!</p>
+
+            </div><!-- /col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3>Compiling less</h3>
+
+                <p class="lead">LESS extends CSS with dynamic behavior & compile on server side</p>
+
+                <h4>How to change page style</h4>
+
+                <p>For example, you want to change main color:</p>
+
+                <ul class="icon icon-star">
+                    <li>Download <a href="https://github.com/oyejorge">oyejorge</a> phpless (last version <a href="https://github.com/oyejorge/less.php/releases/download/v1.4.2.2/phpless_1.4.2.2.zip">phpless_1.4.2.2</a>)</li>
+                    <li>Put both files <code>less.php</code> and <code>lesscache.php</code> to <code>compile</code> folder</li>
+                    <li>Upload theme files to server (PHP 5 or above needed)</li>
+                    <li>Open <code>barnaul.less</code> file. Here is the <a href="css/barnaul.less">link</a></li>
+                    <li>Find <code>GLOBAL VARIABLES</code> section & <code>COLORS</code> subsection in the file, then find <code>Brand colors</code></li>
+                    <li>Change <code>@brn-primary</code> from <code>#cc1433</code> to <code>#00ff00</code> (for example)</li>
+                    <li>If you look to page now, you'll see that nothing has changed. Because our design takes style from <code>bootstrap.css</code> file</li>
+                    <li>Now we will convert our <code>bootstrap.less</code> to <code>bootstrap.css</code>.<br>
+                        To do this just click Compile button on top of page or open <a href="compile/index.php" target="_blank">Compile link</a> & wait for 2-10 seconds</li>
+                    <li>When you'll finish styling your page, <strong>delete <code>compile</code> folder from server</strong> & this help file :)</li>
+                </ul>
+
+
+            </div><!-- /col-sm-6 -->
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+<!-- =============================================== CSS & LESS END ================================================ -->
+
+<!-- =============================================== LOCALISATION ================================================== -->
+<section>
+
+    <div class="container">
+
+        <!-- Section header -->
+        <header>
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Don't forget to use span tag for center lines -->
+                    <h2 class="stripe"><span>Localisation</span></h2>
+                </div>
+            </div>
+        </header>
+        <!-- Section header-->
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <h3>Font</h3>
+
+                <p>Font "Source Sans Pro" does not contain non-latin characters.</p>
+                <p>If you use non-latin characters (Russian, Greece), you can change the font to another in less file & in the head section of html code:</p>
+                <ul class="icon icon-star">
+                    <li>In <code>barnaul.less</code> find <code>@font-family-sans-serif</code> var & change it</li>
+                    <li>in head section of html file find <code>Google font</code> line & change it</li>
+                    <li>You can find much font on <a href="http://www.google.com/fonts/">Google webfont</a> service.</li>
+                    <li>I recommend to use <code>Open Sans</code> font family (all widths)</li>
+                </ul>
+
+            </div><!-- /col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3>Feedback & Newsletter form messages</h3>
+
+                <p class="lead">There're two kind of validations using in forms. First is client-side validation, second is server-side validation</p>
+                <p>For example, you want to change (translate) all messages for both forms:</p>
+
+                <h5 class="color-primary">Client-side validation</h5>
+
+                <ul class="icon icon-star">
+                    <li>Find <code>Form validation messages</code> line in <code>SCRIPTS</code> section of html file<br>
+                        Choose your language file <code>messages_ru.js</code> or <code>messages_en.js</code><br>
+                        If you don't need russian or english language here, you can edit <code>messages_en.js</code> for your purposes or you can create your own language file</li>
+                    <li>Find <code>FEEDBACK FORM</code> section in <code>scripts.js</code> file and find <code>Success message</code> line</li>
+                    <li>Find <code>NEWSLETTER FORM</code> section in <code>scripts.js</code> file and find <code>Success message</code> line</li>
+                </ul>
+
+                <h5 class="color-primary">Server-side validation</h5>
+
+                <ul class="icon icon-star">
+                    <li>Find <code>assets/feedback.php</code> file, open it and find <code>MESSAGE LANGUAGE</code> section<br>
+                        Choose your language file <code>lang_en.php</code> or <code>lang_ru.php</code><br>
+                        If you don't need russian or english language here, you can edit <code>lang_en.php</code> for your purposes or you can create your own language file (this is unifed file for both forms).
+                    </li>
+                </ul>
+
+            </div><!-- /col-sm-6 -->
+
+
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+<!-- =============================================== LOCALISATION END ============================================== -->
+
+<!-- =================================================== ICONS ===================================================== -->
+<section>
+
+    <div class="container">
+
+        <!-- Section header -->
+        <header>
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Don't forget to use span tag for center lines -->
+                    <h2 class="stripe"><span>Icons</span></h2>
+                </div>
+            </div>
+        </header>
+        <!-- Section header-->
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <h3>"Batch" icon font</h3>
+
+                <p class="lead">You can use Batch icon font wherever you want. A&nbsp;lovingly designed and crafted suite of 300+ icons for web and user interface design.</p>
+                <p>Just add to any tag on your page (span for example) <code>.batch</code> class and write icon code inside it</p>
+                <pre>&lt;span class="batch"&gt; &amp;#xf0a4; &lt;/span&gt;</pre>
+                <p>Icon code reference you can find <a href="http://adamwhitcroft.com/batch/">here (pdf inside archive)</a>. In near future i'll create class-based font.</p>
+                <p>In PDF <code>... master.zip/webfont/batch_webfont_reference.pdf</code> you can find icon codes like <code>uniF049</code>. Just convert <code>uniF049</code> to <code>&amp;#xf049;</code> and use in your design.</p>
+                <p>For example:
+                    <span class="batch"> &#xf049;</span>
+                    <span class="batch"> &#xf050;</span>
+                    <span class="batch"> &#xf056;</span>
+                    <span class="batch"> &#xf06b;</span>
+                    <span class="batch"> &#xf090;</span>
+                    <span class="batch"> &#xf078;</span>
+                    <span class="batch"> &#xf15d;</span>
+                    and much more
+                </p>
+
+                <h3>Bootstrap Glyphicons</h3>
+
+                <p class="lead">Also you can use <a href="http://getbootstrap.com/components/#glyphicons">Bootstrap Glyphicons</a> icon webfont. Includes 200 glyphs in font format from the Glyphicon Halflings set.</p>
+
+                <pre>&lt;span class="glyphicon glyphicon-iconname"&gt;&lt;/span&gt;</pre>
+
+                <p>Icon utility classes compatible with Glyphicons:</p>
+
+                <p><span class="glyphicon glyphicon-search icon96 color-primary"></span><br><br><code> .glyphicon .glyphicon-search<br>.icon96 .color-primary</code></p>
+
+            </div><!-- /col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3>Icon utilites</h3>
+
+                <h5 class="color-primary">Icon sizes</h5>
+
+                <p>You can regulate icon-size. Icon-size 16 px by default</p>
+                <p class="batch icon12"> &#xf049; &nbsp;</p>
+                <p class="batch"> &#xf049; &nbsp;</p>
+                <p class="batch icon24"> &#xf049; &nbsp;</p>
+                <p class="batch icon32"> &#xf049; &nbsp;</p>
+                <p class="batch icon48"> &#xf049; &nbsp;</p>
+                <p class="batch icon64"> &#xf049; &nbsp;</p>
+                <p class="batch icon96"> &#xf049; &nbsp;</p>
+
+                <p>Just add to your icon any size class: <code>.icon12</code> <code>.icon24</code> <code>.icon32</code> <code>.icon48</code> <code>.icon64</code> <code>.icon96</code> <code>.icon128</code></p>
+                <pre>&lt;span class="batch icon48"&gt; &amp;#xf0a4; &lt;/span&gt;</pre>
+
+
+                <h5 class="color-primary">Icon colors</h5>
+
+                <p>Just add class <code>.color-primary</code> or <code>.color-secondary</code> to change icon color to branded colors</p>
+
+                <p class="batch icon64 color-primary"> &#xf049; &nbsp;</p>
+                <p class="batch icon64 color-secondary"> &#xf049; &nbsp;</p>
+
+                <pre>&lt;span class="batch icon48 color-primary"&gt; &amp;#xf0a4; &lt;/span&gt;</pre>
+
+            </div><!-- /col-sm-6 -->
+
+
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+<!-- ================================================== ICONS END ================================================== -->
+
+<!-- =================================================== HOW TO ==================================================== -->
+<section>
+
+    <div class="container">
+
+        <!-- Section header -->
+        <header>
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Don't forget to use span tag for center lines -->
+                    <h2 class="stripe"><span>How to</span></h2>
+                </div>
+            </div>
+        </header>
+        <!-- Section header-->
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <h3>Control fotorama</h3>
+
+                <p class="lead"><a href="http://fotorama.io">Fotorama</a> is a photo or html gallery, which uses in iPhone gallery & Customer reviews</p>
+
+                <p>You can control fotorama via data attributes, like <code>data-width="800"</code></p>
+                <p>Full data-attributes reference you can find <a href="http://fotorama.io/customize/">here</a></p>
+
+                <div class="fotorama">
+                    <img src="img/port1.jpg" alt="port1"/>
+                    <img src="img/port2.jpg" alt="port2"/>
+                    <img src="img/port3.jpg" alt="port3"/>
+                </div>
+
+            </div><!-- /col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3>Add parallax background</h3>
+
+                <p class="lead"><a href="http://markdalgleish.com/projects/stellar.js/">Stellar</a> is a parallax background adder</p>
+
+                <p>You can add parallax via data attribute, just add <code>data-stellar-background-ratio="XXX"</code> and <code> data-stellar-vertical-offset="XXX"</code> to your tag with background image</p>
+
+                <div style="background: url('img/bg-red.jpg') top center no-repeat; height: 438px; margin-top: 30px;" data-stellar-background-ratio="0.5"></div>
+
+            </div><!-- /col-sm-6 -->
+
+
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+<!-- ================================================== HOW TO END ================================================= -->
+
+<!-- ================================================= GOOGLE MAP ================================================== -->
+<section>
+
+    <div class="container">
+
+        <!-- Section header -->
+        <header>
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Don't forget to use span tag for center lines -->
+                    <h2 class="stripe"><span>Google map</span></h2>
+                </div>
+            </div>
+        </header>
+        <!-- Section header-->
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <h3>Adding you address</h3>
+
+                <p>You can easily add your coordinates & address to Google map</p>
+
+                <ul class="icon icon-star">
+                    <li>Open <code>scripts.js</code> and find <code>GMAP</code> section</li>
+                    <li>Write your coordinates here: <code>div: '#gmap', lat: XX.XXXXX, lng: XX.XXXXX</code></li>
+                    <li>To change marker coordinates find <code>gmap.addMarker({ lat: XX.XXXXX, lng: XX.XXXXX</code> piece and fill your data</li>
+                    <li>You can add your address to marker in <code>infoWindow</code> section</li>
+                </ul>
+
+            </div><!-- /col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3>Feedback</h3>
+                
+                <p class="lead">If you have a question about Barnaul support or you need to customize Barnaul, write me a line: <a href="mailto:yuriybalaka@gmail.com">yuriybalaka@gmail.com</a></p>
+
+            </div><!-- /col-sm-6 -->
+
+
+        </div><!-- /row -->
+    </div><!-- /container -->
+</section>
+<!-- ================================================ GOOGLE MAP END =============================================== -->
+
+<!-- ================================================== FOOTER ===================================================== -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Copyright -->
+            <div class="col-sm-6">
+                <p>Copyright © 2013 Balakadesign.<br>Made with  <a href="http://themeforest.net/user/balaka"> <span class="batch color-primary">&#xf049;</span> in Russia</a></p>
+            </div><!-- /col-sm-6 -->
+
+            <!-- Social Media icons -->
+            <div class="col-sm-6 text-center">
+                <a href="#" class="entypo-social sm-icon">&#xe618;</a>
+                <a href="#" class="entypo-social sm-icon">&#xe61a;</a>
+                <a href="#" class="entypo-social sm-icon">&#xe617;</a>
+                <a href="#" class="entypo-social sm-icon">&#xe619;</a>
+            </div><!-- /col-sm-6 -->
+            <!-- Social Media icons end -->
+
+        </div><!-- /row -->
+    </div><!-- container -->
+</footer>
+<!-- ================================================ FOOTER END =================================================== -->
+
+<!-- ================================================== SCRIPTS ==================================================== -->
+<!-- You can delete unused scripts if you want -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+<!-- Fotorama — image & html gallery-->
+<script src="js/fotorama.js" type="text/javascript"></script>
+
+<!-- All bootstrap scripts in one -->
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Stellar — background image parallax -->
+<script src="js/stellar.js" type="text/javascript"></script>
+
+<!-- Countdown -->
+<script src="js/jquery.countdown.min.js" type="text/javascript"></script>
+
+<!-- Barnaul custom scripts -->
+<script src="js/scripts.js" type="text/javascript"></script>
+
+<!-- ================================================ SCRIPTS END ================================================== -->
+</body>
+</html>
